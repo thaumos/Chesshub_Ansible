@@ -12,7 +12,3 @@
 - name: Adding Swapfile
   include: swap.yml
   when: common_swap == True
-
-- name: Adding user
-  include: user.yml
-  when: common_user == True
