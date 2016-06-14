@@ -3,9 +3,6 @@
   apt: name={{ item }} state=present update_cache=yes
   with_items: common_packages
 
-- name: Enable Screen Scrolling
-  lineinfile: dest=/etc/screenrc line="termcapinfo xterm* ti@:te@" insertafter=EOF
-
 - name: Install NTP
   apt: name=ntp state=present update_cache=yes
 
